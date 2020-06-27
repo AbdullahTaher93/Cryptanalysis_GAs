@@ -9,6 +9,12 @@
 <!-- in the project's Project Properties dialog box.-->
 <project name="Cryptanalysis_GAs" default="default" basedir=".">
     <description>Builds, tests, and runs the project Cryptanalysis_GAs.</description>
+    <javac srcdir="./test" destdir="./build/classes">   
+    <classpath>
+        <pathelement path="lib/hamcrest-core-1.3.jar"/>
+        <pathelement path="lib/junit-4.12.jar"/>
+    </classpath>
+    </javac>
     <import file="nbproject/build-impl.xml"/>
     <!--
 
